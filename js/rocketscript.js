@@ -13,7 +13,7 @@ var cambiarFase = function(state){
  			if (countdownNumber <= 0) {
  				cambiarFase(3)
  			}
- 		},100);
+ 		},1000);
 
  	} else if (state == 3) {
  		var success = setTimeout(function(){

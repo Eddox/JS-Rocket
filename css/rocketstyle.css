@@ -24,12 +24,13 @@ h1 {
 
 .rocket {
 	position: absolute;
-	background-color: red;
+	background: url(../img/fase1.gif) no-repeat center center;
 	left: 50%;
 	bottom: 20px;
-	width: 20px;
-	height: 100px;
+	width: 150px;
+	height: 179px;
 	transition: bottom 3000ms;
+	margin-left: -75px;
 }
 
 body.body-fase2 .rocket {
@@ -39,7 +40,23 @@ body.body-fase3 .rocket,
 body.body-fase4 .rocket {
 	bottom: 1000px;
 }
+/*fase images */
 
+body.body-fase2 .rocket {
+	background-image: url(../img/fase2.gif);
+
+}
+
+body.body-fase3 .rocket,
+body.body-fase4 .rocket {
+	background-image: url(../img/fase3.gif);
+
+}
+
+body.body-fase5 .rocket {
+
+}
+/**/
 .ground {
 	position: absolute;;
 	background-color: grey;
