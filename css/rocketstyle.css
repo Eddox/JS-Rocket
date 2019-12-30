@@ -1,0 +1,59 @@
+.left {
+	background-color: #77D9C7;
+	position: fixed;
+	width: 50%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+.right {
+	background-color: #DDFED8;
+	position: fixed;
+	width: 50%;
+	height: 100%;
+	top: 0;
+	right: 0;
+}
+
+h1 {
+	font-family: sans-serif;
+	color: white;
+	padding-left: 20px;
+}
+
+.rocket {
+	position: absolute;
+	background-color: red;
+	left: 50%;
+	bottom: 20px;
+	width: 20px;
+	height: 100px;
+	transition: bottom 3000ms;
+}
+
+body.body-fase2 .rocket {
+	transition: none;
+}
+body.body-fase3 .rocket,
+body.body-fase4 .rocket {
+	bottom: 1000px;
+}
+
+.ground {
+	position: absolute;;
+	background-color: grey;
+	bottom: 0px;
+	height: 20px;
+	width: 100%;
+}
+
+.fase1, .fase2, .fase3, .fase4, .fase5 {
+display: none;
+}
+
+body.body-fase1 .fase1{display: block;}
+body.body-fase2 .fase2{display: block;}
+body.body-fase3 .fase3{display: block;}
+body.body-fase4 .fase4{display: block;}
+body.body-fase5 .fase5{display: block;}
