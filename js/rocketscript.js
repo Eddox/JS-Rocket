@@ -18,7 +18,7 @@ var cambiarFase = function(state){
  	} else if (state == 3) {
  		var success = setTimeout(function(){
  			var randomNumber = Math.round(Math.random()*10);
- 			if (randomNumber > 3){
+ 			if (randomNumber > 5){
  				cambiarFase(4)
  			} else {
  				cambiarFase(5)
